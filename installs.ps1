@@ -57,29 +57,4 @@ pacman -Syu
 pacman -Sy git curl zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Add zsh execution to ~/.bash_profile
-$bashProfilePath = "$HOME\.bash_profile"
-if (-not (Test-Path $bashProfilePath)) {
-    New-Item -ItemType File -Path $bashProfilePath
-}
-Add-Content -Path $bashProfilePath -Value @'
-if [ -t 1 ]; then
-    exec zsh
-fi
-'@
-
-# Update VS Code settings
-$vscodeSettingsPath = "$HOME\AppData\Roaming\Code\User\settings.json"
-if (-not (Test-Path $vscodeSettingsPath)) {
-    New-Item -ItemType File -Path $vscodeSettingsPath -Force
-}
-$vscodeSettings = Get-Content -Path $vscodeSettingsPath -Raw | ConvertFrom-Json
-$vscodeSettings."terminal.integrated.defaultProfile.windows" = "Git Bash"
-$vscodeSettings."terminal.integrated.profiles.windows" = @{
-    "Git Bash" = @{
-        "source" = "Git Bash"
-    }
-}
-$vscodeSettings | ConvertTo-Json -Depth 100 | Set-Content -Path $vscodeSettingsPath
-
 Write-Output "All applications installed successfully."
