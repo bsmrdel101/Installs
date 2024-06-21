@@ -34,7 +34,8 @@ $apps = @(
     'sidequest',
     'msys2',
     'javaruntime',
-    'arduino'
+    'arduino',
+    'gnupg'
 )
 
 # Install each application
