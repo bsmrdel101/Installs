@@ -32,3 +32,6 @@ if [ -t 1 ]; then
   exec zsh
 fi
 ```
+
+## Problems Installing Oh-My-Zsh
+Try following this [tutorial](https://gist.github.com/fworks/af4c896c9de47d827d4caa6fd7154b6b?permalink_comment_id=3804105)
