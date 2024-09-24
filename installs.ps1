@@ -15,6 +15,7 @@ if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
 # List of applications to install
 $apps = @(
     'googlechrome',
+    'firefox',
     'discord',
     '7zip',
     'git',
