@@ -1,7 +1,7 @@
 # Getting Started
 
 - Download or copy the contents of **installs.ps1**
-- Open PowerShell with admin privilages and navigate to the file location
+- Open PowerShell with admin privilages and navigate to the file location of the installs.ps1 file
 - Run `.\installs.ps1`
 
 ## After Running Script
