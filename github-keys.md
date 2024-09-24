@@ -5,8 +5,8 @@
 
 ## GPG Key
 - Open git bash
-- gpg --full-generate-key
-- gpg --list-secret-keys --keyid-format=long
+- `gpg --full-generate-key`
+- `gpg --list-secret-keys --keyid-format=long`
 - From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is 3AA5C34371567BD2:
 ```
 $ gpg --list-secret-keys --keyid-format=long
