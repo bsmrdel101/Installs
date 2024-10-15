@@ -27,7 +27,7 @@ $apps = @(
     'blender',
     'krita',
     'postgresql',
-    'dotnet',
+    'dotnet-sdk',
     'unity-hub',
     'minecraft-launcher',
     'ea-app',
