@@ -1,8 +1,8 @@
 ## SSH Key
 - Go to [https://github.com/settings/keys](https://github.com/settings/keys)
 - Open git bash
-- ssh-keygen -t ed25519 -C "fireknights318@gmail.com"
-- clip < ~/.ssh/id_ed25519.pub
+- `ssh-keygen -t ed25519 -C "fireknights318@gmail.com"`
+- `clip < ~/.ssh/id_ed25519.pub`
 
 ## GPG Key
 - Open git bash
