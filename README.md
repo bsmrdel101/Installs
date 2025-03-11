@@ -3,6 +3,7 @@
 - Download or copy the contents of **installs.ps1**
 - Open PowerShell with admin privilages and navigate to the file location of the installs.ps1 file
 - Run `.\installs.ps1`
+- If you don't have permissions to run the file, trying doing `Set-ExecutionPolicy -ExecutionPolicy Bypass` and then set it back to `Set-ExecutionPolicy -ExecutionPolicy Restricted` when you're done. Check ExecutionPoliy with `Get-ExecutionPolicy`
 
 ## After Running Script
 - Open the settings.json in VSCode and add the following:
